@@ -1,0 +1,1 @@
+year = int(str(info.get("year", "0")).split()[0]) if isinstance(info.get("year"), str) else int(info.get("year", [0])[0]) if isinstance(info.get("year"), list) else int(info.get("year", 0)) if info.get("year") else 0
